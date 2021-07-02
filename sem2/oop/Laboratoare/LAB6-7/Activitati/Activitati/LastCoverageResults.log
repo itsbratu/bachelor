@@ -1,0 +1,21 @@
+[2021-04-19 11:30:38] [info] Start Program:
+Path:"D:\\Facultate\\Anul1\\Semestrul II\\OOP\\Laboratoare\\LAB6-7\\Activitati\\Debug\\Activitati.exe"
+Arguments:
+Working directory: "D:\\Facultate\\Anul1\\Semestrul II\\OOP\\Laboratoare\\LAB6-7\\Activitati\\Activitati\\"
+Modules: Selected: D:\Facultate\Anul1\Semestrul II\OOP\Laboratoare\LAB6-7\Activitati\Debug\Activitati.exe Excluded: 
+Sources: Selected: D:\Facultate\Anul1\Semestrul II\OOP\Laboratoare\LAB6-7\Activitati\Activitati Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: binary C:\Users\flori\AppData\Local\Temp\hvsykqjb.hk2 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2021-04-19 11:30:38] [info] Module: D:\Facultate\Anul1\Semestrul II\OOP\Laboratoare\LAB6-7\Activitati\Debug\Activitati.exe is selected because it matches selected pattern: D:\Facultate\Anul1\Semestrul II\OOP\Laboratoare\LAB6-7\Activitati\Debug\Activitati.exe
+[2021-04-19 11:30:38] [info] ----------------------------------------------------
+[2021-04-19 11:30:38] [info] Coverage binary generated in file: C:\Users\flori\AppData\Local\Temp\hvsykqjb.hk2
+[2021-04-19 11:30:38] [info] ----------------------------------------------------

@@ -1,0 +1,17 @@
+**/Debug
+**/.vs
+**/.pyc
+**/Release
+**/*.png
+**/*.pdf
+**/*.vcxproj*
+**/*.txt
+**/*.sln
+**/*.7z
+**/*.zip
+**/__pycache__
+**/*.EXE
+**/*.exe
+**/*.obj
+**/.idea
+**/*.lst
