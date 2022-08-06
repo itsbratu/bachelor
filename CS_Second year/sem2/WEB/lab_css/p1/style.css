@@ -1,0 +1,24 @@
+#parent {
+    border: 2px solid black;
+    display: table;
+}
+
+#left {
+    width: 200px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#right {
+    width: 200px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#right img {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

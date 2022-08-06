@@ -1,0 +1,79 @@
+Iteratia 1:
+
+a) Scrierea claselor din domain (User, Code, Bug, Review, Message) - 1 ore
+	- scriere atribute - 30 minute
+	- scriere metode - 30 minute
+b) Crearea bazei de date - 1 ora
+	- adaugare tabele cu coloanele dorite - 45 min
+	- adaugare relatii intre tabele - 15 min
+c) Scrierea claselor din repository + cum se foloseste ORM - 7 ore
+	- documentatie ORM (dapper) - 1 ora 45 minute
+	- scriere interfete repository pentru fiecare entiate - 30 minute
+	- documentare folosire ORM in loc de db querries - 1 ora
+	- implementarea metodelor din repository folosite in cadrul aplicatiei - 3 ore 45 minute
+		- Add, delete, update, read User - 1 ora si 45 de minute
+		- Add, delete, read Bug - 1 ora
+d) Scrierea claselor Controller care apeleaza deja metodele existente din repository-uri - 1 ora
+e) Implementare schimbare form-uri in aplicatie(navigare de la un screen la altul) - 1 ora
+f) Implementare login aplicatie - 1 ore
+	- preluarea datelor utilizatorului + validarea acestora - 30 de minute
+	- redirectionare utilizator in functie de natura acestuia(Programmer, Tester, Admin) la meniul principal - 15 minute
+	- customizare aspect aplicatie - 15 minute
+
+Iteratia 2:
+a) Implementare metode din Repository (1 ora)
+		- Read Code - 15 minute
+		- Add, read Review - 45 minute
+b) Implementarea functionalitatilor Admin - 3 ore 30 minute
+	- adaugare cont nou - 1 ora
+		- preluarea si validarea datelor(username, password, first_name, last_name, tip_cont) - 30 de minute
+		- adaugare utilizator nou in baza de date - 15 minute
+		- customizare aspect aplicatie - 15 minute
+	- stergere cont existent din cadrul aplicatiei - 45 de minute
+		- preluarea si validarea datelor(username) - 15 minute
+		- stergere utilizator existent din baza de date - 15 minute
+		- customizare aspect aplicatie - 15 minute
+	- modificare cont existent din cadrul aplicatiei - 1 ora
+		- afisarea utilizatorilor existenti din cadrul aplicatiei(username, password, first_name, last_name, tip_cont) - 20 minute
+		- preluarea si validarea datelor - 15 minute 
+		- modificarea utilizatorului dorit in baza de date - 25 de minute
+		- customizare aspect aplicatie - 10 minute
+	- afisare lista utilizatori - 30 minute
+		- preluarea din baza de date a utilizatorilor - 15 minute
+		- afisarea acestora in interfata adminului - 15 minute
+
+c) Adaugare functionalitati Tester + Programmer - 3 ore 
+	TESTER:
+	- adaugare nou bug - 50 minute
+		- preluarea si validarea datelor(id_code, description, severity) - 20 de minute
+		- adaugare de nou bug in baza de date - 20 de minute
+		- aspect aplicatie - 50 de minute
+
+	TESTER & PROGRAMMER:
+      - vizualizare bug-uri - 1 ora
+		- preluarea bug-urilor specifice programatorului logat - 30 de minute
+		- afisare acestora - 15 minute
+		- aspect aplicatie - 15 minute
+	- reparare bug - 45 de minute
+		- preluarea si validarea datelor (id_bug) - 15 minute
+		- stergerea bugului din baza de date + a mesajelor asociate acestuia - 30 de minute
+
+Iteratia 3:
+
+a) Implementare functionalitati Programmer / Tester - 3 ore 45 de minute
+	- adaugare mesaj nou - 50 minute
+		- preluarea si validarea datelor(id_bug, content) - 20 de minute
+		- adaugare de nou mesaj in baza de date - 20 de minute
+		- aspect aplicatie - 10 minute
+	- vizualizare mesaje - 45 minute
+		- validarea datelor (id_bug) - 15 minute
+		- preluarea mesajelor dorite din baza de date + afisare - 30 minute
+	- adaugare review - 45 de minute
+		- preluarea si validarea datelor (id_code, description, feedback) - 15 minute
+		- adaugarea review-ului in baza de date - 30 minute
+	- vizualizare review-uri utilizator logat - 45 de minute
+		- preluare date review-uri utilizator curent logat - 30 de minute
+		- afisarea acestora + aspect interfata - 15 minute
+
+b) Asigurarea integrala a functionalitatii aplicatiei - 45 de minute
+			

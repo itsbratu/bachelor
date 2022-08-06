@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>p3</title>
+  </head>
+
+  <body onload="loadIDs()">
+    <div id="selection"> </div>
+    <div id="container"> </div>
+  </body>
+
+
+<script>
+    function loadIDs(){
+      var xhttp;
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("selection").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "showIDs.php", true);
+      xhttp.send(null);
+    }
+
+    function showForm(val){
+      var xhttp;
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("container").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "showPersons.php?id=" + val, true);
+      xhttp.send(null);
+
+    }
+
+function save(){
+    if(true == confirm("Are you sure you want to update this field?")){
+
+      var theSelect = document.getElementById("select");
+      var id = theSelect.options[theSelect.selectedIndex].value;
+      var firstName = document.getElementById("fname").value;
+      var lastName = document.getElementById("lname").value;
+      var email = document.getElementById("email").value;
+
+      var xhttp;
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange=function(){
+      if(this.readyState == 4 && this.status == 200){
+          confirm("Update completed");
+        }
+      };
+    xhttp.open("GET", "update.php?id=" + id + "&fname=" + firstName + "&lname="  + lastName + "&email=" + email, true);
+    xhttp.send(null);
+  }
+}
+
+</script>
+
+
+</html>

@@ -1,0 +1,38 @@
+﻿using App.Controller;
+using App.Forms.Programmer;
+using App.Utils.DTOs;
+using System;
+using System.Windows.Forms;
+
+namespace App.Message
+{
+    partial class SendMessage : Form
+    {
+        private LoggedEmployeeDTO loggedEmp;
+        private LoginController loginCntrl;
+        private MessagesController msgCntrl;
+        public SendMessage(LoggedEmployeeDTO emp, LoginController login_controller, MessagesController msg_controller)
+        {
+            InitializeComponent();
+            loggedEmp = emp;
+            loginCntrl = login_controller;
+            msgCntrl = msg_controller;
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            if (loggedEmp.type == EmployeeType.Programmer)
+            {
+                ProgrammerMain programmerMain = new ProgrammerMain(loggedEmp, loginCntrl);
+                this.Hide();
+                programmerMain.Show();
+            }
+            else
+            {
+                TesterMain testerMain = new TesterMain(loggedEmp, loginCntrl);
+                this.Hide();
+                testerMain.Show();
+            }
+        }
+    }
+}

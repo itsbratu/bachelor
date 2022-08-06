@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventar calatorie</title>
+</head>
+<body>
+    <form> 
+        <h2> CHESTIONAR DRUMETIE </h2>
+        <table>
+            <tr>
+            <th colspan = "2">Date personale<img src = "http://cdn.onlinewebfonts.com/svg/img_148969.png" width = "30" height = "30" alt="personal_data_img">
+            </tr>
+            <tr>
+                <td>
+                    <label for = "inputNume">Nume:</label>
+                </td>
+                <td>
+                    <input id = "inputNume" name = "inputNume" type = "text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "inputPrenume">Prenume:</label>
+                </td>
+                <td>
+                    <input id = "inputPrenume" name = "inputNume" type = "text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "inputGen">Gen:</label>
+                </td>
+                <td>
+                    <select id = "inputGen" name = "inputGen" size="1">
+                        <option>Female</option>
+                        <option selected>Male</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "inputCNP">CNP:</label>
+                </td>
+                <td>
+                    <input id = "inputCNP" type = "text" maxlength="13">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type = "text" readonly disabled value = "V&#258; RUG&#258;M INTRODUCE&#354;I DATE VALIDE PENTRU FORMULAR  !!!!!!!" size = "60">
+                </td>
+            </tr>
+            <tr>
+                <th>Domiciliu<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="imagine_domiciliu" width="20" height="20"></th> 
+                <th>Chestionar<img src = "https://previews.123rf.com/images/jovanas/jovanas1606/jovanas160600403/58893931-%ED%80%B4%EC%A6%88-%EC%95%84%EC%9D%B4%EC%BD%98.jpg" alt="imagine_chestionar" width="20" height="20"></th>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows = "30" cols = "25">
+                        
+                    </textarea>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>
+                                <b>Ora</b>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol type="I">
+                                    <li>
+                                        <fieldset>
+                                            <legend><strong>Or&#259; plecare:</strong></legend>
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "ora_10am" name ="oraRadio1" value="10" checked>
+                                                        <label for="ora_10am">10AM</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "ora_12pm" name ="oraRadio1" value="12">
+                                                        <label for="ora_12pm">12PM</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "ora_2pm" name ="oraRadio1" value="14">
+                                                        <label for="ora_2pm">2PM</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </li>
+                                    <li>
+                                        <br>
+                                        <fieldset>
+                                            <legend><strong>Or&#259; sosire:</strong></legend>
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "ora_8pm" name ="oraRadio2" value="20" checked>
+                                                        <label for="ora_8pm">8PM</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "ora_6pm" name ="oraRadio2" value="18">
+                                                        <label for="ora_6pm">6PM</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "ora_10pm" name ="oraRadio2" value="22">
+                                                        <label for="ora_10pm">10PM</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <b>Efort</b>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol type="A">
+                                    <li>
+                                        <fieldset>
+                                            <legend><strong>Nivel efort:</strong></legend>
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "efort_minim" name ="efortRadio1" value="minim">
+                                                        <label for="efort_minim">Minim</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "efort_medium" name ="efortRadio1" value="medium" checked>
+                                                        <label for="efort_medium">Medium</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "efort_maxim" name ="efortRadio1" value="maxim">
+                                                        <label for="efort_maxim">Maxim</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </li>
+                                    <li>
+                                        <br>
+                                        <fieldset>
+                                            <legend><strong>Efort s&#259;pt&#259;m&#226;nal:</strong></legend>
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "numberdays_2" name ="efortRadio2" value="2">
+                                                        <label for="numberdays_2">2 zile</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "numberdays_4" name ="efortRadio2" value="4" checked>
+                                                        <label for="numberdays_4">4 zile</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" id = "numberdays_6" name ="efortRadio2" value="6">
+                                                        <label for="numberdays_6">6 zile</label>
+                                                    </div>
+                                                    <br>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <b>Inventar</b>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://www.dorna.com/"><img src="https://www.auchan.ro/public/images/h92/heb/h00/apa-plata-dorna-2-l-9309752459294.jpg" alt="poza_dorna" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="apa">Ap&#259;:</label>
+                    <input type="number" id = "apa" value = "1" step="2" max="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://lays.ro/"><img src="https://s13emagst.akamaized.net/products/30292/30291710/images/res_c3a4234321e40f8517c52061c265cbf6.jpg" alt="poza_lays" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="chipsuri">Chipsuri:</label>
+                    <input type="number" id = "chipsuri" value="2" step="1" max="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://www.milka.ro/"><img src="https://www.auchan.ro/public/images/h15/h3e/h00/ciocolata-cu-lapte-milka-100-g-8950828531742.jpg" alt="poza_milka" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="ciocolata">Ciocolat&#259;:</label>
+                    <input type="number" id = "ciocolata" value="1" step="1" max="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://nutline.ro/"><img src="https://www.auchan.ro/public/images/h98/h27/h00/alune-prajite-nutline-135-g-9340983476254.jpg" alt="poza_nutline" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="alune">Alune:</label>
+                    <input type="number" id = "alune" value="2" step="2" max="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://www.coca-cola.com/"><img src="https://www.auchan.ro/public/images/hd5/h76/h00/bautura-racoritoare-coca-cola-075l-9437571088414.jpg" alt="poza_coca_cola" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="suc">Suc:</label>
+                    <input type="number" id = "suc" value="1" step="1" max="7">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://www.7days.com/ro/"><img src="https://www.7days.com/files/1/Products-International/Double/Max/7DAYS-DOUBLE-SUPER-MAX.png" alt="poza_7days" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="croissant">Croissant:</label>
+                    <input type="number" id = "croissant" value="3" step="1" max="6">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://liptonpromo.ro/"><img src="https://sacagiu.ro/wp-content/uploads/2021/03/lipton-ice-tea-green-ceai-verde-si-piersica-05l.jpg" alt="poza_dorna" width="40" height="40"></a>
+                </td>
+                <td>
+                    <label for="ceai">Ceai:</label>
+                    <input type="number" id = "ceai" value="2" step="2" max="15">
+                </td>
+            </tr>  
+            <tr>
+                <td colspan="2">
+                    <h4>Selecteaz&#259; fi&#351;iere relevante c&#259;l&#259;toriei</h4>
+                    <input type="file" multiple>
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="2">
+                    <h3>Am luat la cuno&#351;tin&#355;&#259; totul <input type="checkbox"></h3>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    <input type="submit">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

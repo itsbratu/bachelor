@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>p4</title>
+    <style>
+      td {
+        border: 1px solid black;
+        padding: 25px 25px 25px 25px;
+      }
+
+      .cover {
+        display: none;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <table id="table">
+      <tr>
+        <td id="1" onclick="put(this)"></td>
+        <td id="2" onclick="put(this)"></td>
+        <td id="3" onclick="put(this)"></td>
+      </tr>
+      <tr>
+        <td id="4" onclick="put(this)"></td>
+        <td id="5" onclick="put(this)"></td>
+        <td id="6" onclick="put(this)"></td>
+      </tr>
+      <tr>
+        <td id="7" onclick="put(this)"></td>
+        <td id="8" onclick="put(this)"></td>
+        <td id="9" onclick="put(this)"></td>
+      </tr>
+    </table>
+
+    <p id="fin"></p>
+
+    <script>
+      var arr = ["-", "-", "-", "-", "-", "-", "-", "-", "-"];
+
+      function put(cell) {
+        cell.innerHTML = "X";
+        arr[cell.id - 1] = "X";
+        handleMove(arr.join(""));
+      }
+    </script>
+  </body>
+</html>

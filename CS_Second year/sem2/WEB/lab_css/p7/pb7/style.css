@@ -1,0 +1,47 @@
+.dialog {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.dialog li {
+    left: 120px;
+    margin: 20px 0 20px 0;
+    padding: 30px;
+    max-width: 50%;
+    text-align: center;
+    position: relative;
+    display: block;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.dialog li::before {
+    position: absolute;
+    top: -20px;
+    left: -130px;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+}
+
+.dialog li::after {
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    width: 27px;
+    height: 20px;
+    background-color: white;
+    transform: skew(-16deg, -15deg) rotate(45deg);
+    content: "";
+    box-shadow: -1.5px 1.5px 0 black;
+}
+
+.alice::before {
+    background: transparent url(alicebob.png) -10px -13px no-repeat;
+}
+
+.bob::before {
+    background: url(alicebob.png) -10px -150px no-repeat;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <Button fx:id="buttonLogout" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+        <Label fx:id="labelStart" layoutX="140.0" layoutY="12.0" prefHeight="53.0" prefWidth="239.0" text="Game started!">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+      <Label fx:id="labelLitere" layoutX="41.0" layoutY="88.0" text="Litere disponibile:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputCuvant" layoutX="169.0" layoutY="177.0" prefHeight="25.0" prefWidth="239.0" />
+      <Label layoutX="90.0" layoutY="180.0" text="Cuvant:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="260.0" layoutY="230.0" mnemonicParsing="false" onAction="#submitWord" text="SUBMIT" />
+      <Label layoutX="123.0" layoutY="288.0" text="Puncte:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="316.0" text="Incercari:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAtentionare" layoutX="273.0" layoutY="360.0" text="TEXT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="valoarePuncte" layoutX="201.0" layoutY="290.0" text="0" />
+      <Label fx:id="valoareIncercari" layoutX="201.0" layoutY="317.0" text="0" />
+    </children>
+</AnchorPane>

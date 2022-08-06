@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using App.Controller;
+using App.Utils.DTOs;
+
+namespace App.Programmer
+{
+    partial class ProgrammerMain : Form
+    {
+        private LoggedEmployeeDTO loggedEmp;
+        private LoginController loginCntrl;
+        private BugsController bugCntrl;
+        private MessagesController msgCntrl;
+        private ReviewsController reviewCntrl;
+        public ProgrammerMain(LoggedEmployeeDTO emp, LoginController controllerLogin, BugsController controllerBug, MessagesController controllerMsg, ReviewsController controllerReview)
+        {
+            loggedEmp = emp;
+            loginCntrl = controllerLogin;
+            bugCntrl = controllerBug;
+            msgCntrl = controllerMsg;
+            reviewCntrl = controllerReview;
+            InitializeComponent();
+        }
+
+        private void ProgrammerMain_Load(object sender, EventArgs e)
+        {
+            label_userName.Text = loggedEmp.username;
+            label_jobTitle.Text = loggedEmp.type.ToString();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Login loginWindow = new Login(loginCntrl);
+            this.Hide();
+            loginWindow.Show();
+        }
+
+        private void buttonViewBugs_Click(object sender, EventArgs e)
+        {
+            UserList usersWindow = new UserList(loggedEmp, loginCntrl, bugCntrl, msgCntrl, reviewCntrl);
+            this.Hide();
+            usersWindow.Show();
+        }
+    }
+}

@@ -1,0 +1,125 @@
+#navlist {
+    position: relative;
+  }
+  
+  #navlist li {
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+  
+  #navlist li, #navlist a {
+    height: 84px;
+    display: block;
+  }
+
+#facebook {
+    top: 0px;
+    width: 84px;
+    background: url('icons/img_sprites.png') 0 84px; 
+}
+
+#facebook a:hover {
+    background: url('icons/img_sprites.png') 0 0px; 
+}
+
+#icon2 {
+    top: 84px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -84px 84px;
+}
+
+#icon2 a:hover {
+    background: url('icons/img_sprites.png') -84px 0px;
+}
+
+#icon3 {
+    top: 168px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -168px 84px;
+}
+
+#icon3 a:hover {
+    background: url('icons/img_sprites.png') -168px 0px;
+}
+
+#google {
+    top: 252px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -252px 84px;
+}
+
+#google  a:hover {
+    background: url('icons/img_sprites.png') -252px 0px;
+}
+
+#in {
+    top: 336px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -336px 84px;
+}
+
+#in a:hover {
+    background: url('icons/img_sprites.png') -336px 0px;
+}
+
+
+#pinterest {
+    top: 420px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -420px 84px;
+}
+
+#pinterest a:hover {
+    background: url('icons/img_sprites.png') -420px 0px;
+}
+
+#icon7 {
+    top: 504px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -504px 84px;
+}
+
+#icon7 a:hover {
+    background: url('icons/img_sprites.png') -504px 0px;
+}
+
+#skype {
+    top: 588px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -588px 84px;
+}
+
+#skype a:hover {
+    background: url('icons/img_sprites.png') -588px 0px;
+}
+
+#twitter {
+    top: 672px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -672px 84px;
+}
+
+#twitter a:hover {
+    background: url('icons/img_sprites.png') -672px 0px;
+}
+
+#vine {
+    top: 756px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -756px 84px;
+}
+
+#vine a:hover {
+    background: url('icons/img_sprites.png') -756px 0px;
+}
+
+#youtube {
+    top: 840px;
+    width: 84px;
+    background: url('icons/img_sprites.png') -840px 84px;
+}
+
+#youtube a:hover {
+    background: url('icons/img_sprites.png') -840px 0px;
+}

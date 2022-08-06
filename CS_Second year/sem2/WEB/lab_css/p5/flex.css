@@ -1,0 +1,48 @@
+.main-container {
+    height: 90vh;
+    width: 30%;
+    border: solid black 2px;
+    background-color: yellow;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    width: 100%;
+    height: 15%;
+    margin-left: 10px
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.image-content{
+    height: 20vh;
+    width: 30%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+#mihai_viteazul {
+    background-image: url("./images/mihai_viteazul.jpg");
+}
+#vlad_tepes {
+    background-image: url("./images/vladtepes.jpg");
+}
+#stefan_cel_mare {
+    background-image: url("./images/stefancelmare.jpg");
+}
+#mircea_cel_batran {
+    background-image: url("./images/mirceacelbatran.jpg");
+}

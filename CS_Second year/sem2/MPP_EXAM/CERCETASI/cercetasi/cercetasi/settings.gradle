@@ -1,0 +1,9 @@
+rootProject.name = 'cercetasi'
+include 'Model'
+include 'Persistance'
+include 'Service'
+include 'Server'
+include 'Networking'
+include 'Client'
+include 'Rest'
+

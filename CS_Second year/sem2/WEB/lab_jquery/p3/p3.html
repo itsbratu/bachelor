@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transition: transform .5s;
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    border-style: outset;
+    border-color: lightblue;
+}
+
+.memory-card.flip {
+  background-color: transparent;
+}
+
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <section class="memory-game">
+    <div class="memory-card" data-framework="c1">
+      <p>1</p>
+    </div>
+    <div class="memory-card" data-framework="c1">
+      <p>1</p>
+    </div>
+
+    <div class="memory-card" data-framework="c2">
+      <p>2</p>
+    </div>
+    <div class="memory-card" data-framework="c2">
+      <p>2</p>
+    </div>
+
+    <div class="memory-card" data-framework="c3">
+      <p>3</p>
+    </div>
+    <div class="memory-card" data-framework="c3">
+      <p>3</p>
+    </div>
+
+    <div class="memory-card" data-framework="c4">
+      <p>4</p>
+    </div>
+    <div class="memory-card" data-framework="c4">
+      <p>4</p>
+    </div>
+
+    <div class="memory-card" data-framework="c5">
+      <p>5</p>
+    </div>
+    <div class="memory-card" data-framework="c5">
+      <p>5</p>
+    </div>
+
+    <div class="memory-card" data-framework="c6">
+      <p>6</p>
+    </div>
+    <div class="memory-card" data-framework="c6">
+      <p>6</p>
+    </div>
+  </section>
+
+  <script src="p3.js"></script>
+</body>
+</html>

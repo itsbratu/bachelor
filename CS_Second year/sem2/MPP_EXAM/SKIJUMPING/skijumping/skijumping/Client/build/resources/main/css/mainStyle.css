@@ -1,0 +1,22 @@
+.anchor-pane
+{
+    -fx-background-color:  #e8cdf8
+}
+.button
+{
+    -fx-background-color: #123C69;
+    -fx-text-fill: #ffffff;
+}
+.label
+{
+    -fx-text-fill: #123C69
+}
+.text-field
+{
+    -fx-background-color: #EEE2DC;
+    -fx-text-fill: #123C69;
+}
+.table-view .column-header
+{
+    -fx-background-color: #EEE2DC;
+}

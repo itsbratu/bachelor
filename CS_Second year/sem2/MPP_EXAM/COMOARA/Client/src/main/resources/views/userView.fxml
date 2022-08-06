@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <Button fx:id="buttonLogout" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+        <Label fx:id="labelStart" layoutX="201.0" layoutY="12.0" prefHeight="53.0" prefWidth="239.0" text="Game started!">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="poz1" layoutX="111.0" layoutY="97.0" mnemonicParsing="false" onAction="#checkPos1" prefHeight="25.0" prefWidth="34.0" text="1" />
+        <Button fx:id="poz2" layoutX="218.0" layoutY="97.0" mnemonicParsing="false" onAction="#checkPos2" prefHeight="25.0" prefWidth="34.0" text="2" />
+        <Button fx:id="poz3" layoutX="310.0" layoutY="97.0" mnemonicParsing="false" onAction="#checkPos3" prefHeight="25.0" prefWidth="34.0" text="3" />
+        <Button fx:id="poz4" layoutX="111.0" layoutY="174.0" mnemonicParsing="false" onAction="#checkPos4" prefHeight="25.0" prefWidth="34.0" text="4" />
+        <Button fx:id="poz5" layoutX="218.0" layoutY="174.0" mnemonicParsing="false" onAction="#checkPos5" prefHeight="25.0" prefWidth="34.0" text="5" />
+        <Button fx:id="poz6" layoutX="310.0" layoutY="174.0" mnemonicParsing="false" onAction="#checkPos6" prefHeight="25.0" prefWidth="34.0" text="6" />
+        <Button fx:id="poz7" layoutX="111.0" layoutY="250.0" mnemonicParsing="false" onAction="#checkPos7" prefHeight="25.0" prefWidth="34.0" text="7" />
+        <Button fx:id="poz8" layoutX="218.0" layoutY="250.0" mnemonicParsing="false" onAction="#checkPos8" prefHeight="25.0" prefWidth="34.0" text="8" />
+        <Button fx:id="poz9" layoutX="310.0" layoutY="250.0" mnemonicParsing="false" onAction="#checkPos9" prefHeight="25.0" prefWidth="34.0" text="9" />
+        <Label fx:id="labelPuncte" layoutX="400.0" layoutY="101.0" text="Puncte:" />
+        <Label fx:id="labelPuncteValoare" layoutX="462.0" layoutY="101.0" text="0" />
+        <Label fx:id="labelDistanta" layoutX="400.0" layoutY="145.0" text="Distanta:" />
+        <Label fx:id="labelDistantaValoare" layoutX="465.0" layoutY="145.0" text="0" />
+        <Label fx:id="labelIncercari" layoutX="399.0" layoutY="190.0" text="Incercari:" />
+        <Label fx:id="labelIncercariValoare" layoutX="465.0" layoutY="191.0" text="3" />
+    </children>
+</AnchorPane>
